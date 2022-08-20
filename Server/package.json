@@ -1,0 +1,37 @@
+{
+  "name": "rtx-test",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "rtx-test usage only",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./Server/index.js",
+    "migrate:up": "npx sequelize-cli db:migrate",
+    "migrate:undo": "npx sequelize-cli db:migrate:undo",
+    "test": "node --experimental-vm-modules ./node_modules/.bin/jest  --force-exit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.2",
+    "morgan": "^1.10.0",
+    "node-fetch": "^3.1.0",
+    "passport": "^0.5.2",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.21.3",
+    "sequelize-cli": "^6.4.1",
+    "supertest": "^6.2.4",
+    "unique-string": "^3.0.0",
+    "validatorjs": "^3.22.1"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3",
+    "nodemon": "^2.0.15"
+  }
+}
